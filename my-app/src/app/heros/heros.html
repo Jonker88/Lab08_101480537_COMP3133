@@ -1,0 +1,17 @@
+<h2>My Heroes</h2>
+
+<ul class="heroes">
+  @for (hero of heroes; track hero.id) {
+    <li>
+      <button type="button" class="heroes">
+        <span class="badge">{{ hero.id }}</span>
+        {{ hero.name | removeSpaces }}
+      </button>
+    </li>
+  }
+</ul>
+
+<p class="directive-demo">
+  <label for="hero-blur-demo">Type and tab away (blur) to uppercase:</label>
+  <input id="hero-blur-demo" type="text" input-format placeholder="Try: angular" />
+</p>
